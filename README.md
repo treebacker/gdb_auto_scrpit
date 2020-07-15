@@ -16,3 +16,11 @@ some script for gdb
   - bk address [暂不支持symbol]
   - 例如
     - bk 0x888
+
+**SelectUniqueCorpus**
+   用于去重fuzz的结果（根据调用堆栈）
+   使用方法
+    echo "source path_to_filterFuzz.py" >> ~/.gdbinit
+    sqs [arsFmt] fuzz's output directory uniqueDirectory
+    egg:
+      sql -i in unique
