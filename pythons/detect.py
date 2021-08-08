@@ -5,7 +5,7 @@ import os
 
 
 # Run in IDAPro 7.5
-
+# idat -A -S"detect.py" in_file
 def is_ret(addr):
     asm = GetDisasm(addr)
     return ("ret" in asm)
